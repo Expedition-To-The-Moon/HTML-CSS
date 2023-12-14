@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/side.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="head-con">
+            <div class="head-btns">
+                <a href="index.html" class="head-home">
+                    <img src="./assets/icons/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="head-search">
+                <img src="./assets/icons/search.svg" alt="search">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="head-btns">
+                <a href="#">
+                    <img src="./assets/icons/home.svg" alt="home">
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/shop.svg" alt="shop">
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/messenger.svg" alt="messneger">
+                </a>
+                <div class="profile">
+                    <img src="./assets/images/avatar.png" alt="user picture">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-con">
+        <section class="con-con">
+            
+            <div class="con">
+                <div class="stories">
+                    <div class="stories-con">
+                        <button class="story">
+                            <div class="story-avatar">
+                                <div class="story-border">
+                                    <svg width="64" height="64">
+                                        <circle r="31" cy="32" cx="32" />
+                                    </svg>
+                                </div>
+                                <div class="story-pic">
+                                    <img src="./assets/images/avatar.png" alt="user picture">
+                                </div>
+                            </div>
+                            <span class="story-user">user1</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="posts">
+                    <article class="post">
+                        <div class="post-header">
+                            <div class="post-profile">
+                                <a href="#" target="_blank" class="post-avatar">
+                                    <img src="./assets/images/avatar.png" alt="user picture">
+                                </a>
+                                <a href="#" target="_blank" class="post-user">user1</a>
+                            </div>
+
+                            <button class="post-more-options">
+                                <img src="./assets/icons/more.svg" alt="more">
+                            </button>
+                        </div>
+
+                        <div class="post-con">
+                            <div class="post-medias">
+                                <img class="post-media" src="./assets/images/picture.jpeg" alt="Post Content">
+                            </div>
+                        </div>
+
+                        <div class="post-footer">
+                            <div class="post-btns">
+                                <button class="post-btn">
+                                    <img src="./assets/icons/heart.svg" alt="heart">
+                                </button>
+                                <button class="post-btn">
+                                    <img src="./assets/icons/comment.svg" alt="comment">
+                                </button>
+
+                                <div class="post-indicators"></div>
+
+                                <button class="post-btn post-btn-align-right">
+                                    <img src="./assets/icons/bookmark.svg" alt="bookmark">
+                                </button>
+                            </div>
+
+                            <div class="post-infos">
+                                <div class="post-likes">
+                                    <a href="#" class="post-likes-avatar">
+                                        <img src="./assets/images/avatar.png" alt="user picture">
+                                    </a>
+
+                                    <span>like by
+                                        <a href="#" class="post-name-underline">user1</a>and
+                                        <a href="#">33 others</a>
+                                    </span>
+                                </div>
+
+                                <div class="post-description">
+                                    <span>
+                                        <a href="#" class="post-name-underline" target="_blank">user</a>
+                                        description
+                                    </span>
+                                </div>
+
+                                <span class="post-date-time">30 minutes ago</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- // con -->
+
+            <div class="side-menu">
+                <div class="side-user-profile">
+                    <a href="#" target="_blank" class="side-user-avatar">
+                        <img src="./assets/images/avatar.png" alt="user picture">
+                    </a>
+                    <div class="side-user-info">
+                        <a href="#" target="_blank">user</a>
+                        <span>nickname</span>
+                    </div>
+                    <button class="side-user-btn">Switch</button>
+                </div>
+
+                <div class="side-suggestions-sec">
+                    <div class="side-suggestions-header">
+                        <h2>Suggestions for you</h2>
+                        <button>See All</button>
+                    </div>
+                    <div class="side-suggestions-con">
+                        <div class="side-suggestion">
+                            <a href="#" class="side-suggestion-avatar">
+                                <img src="./assets/images/avatar.png" alt="avatar">
+                            </a>
+                            <div class="side-suggestion-info">
+                                <a href="#">user11</a>
+                                <span>Followed by user1, user2 and 9 others</span>
+                            </div>
+                            <button class="side-suggestion-btn">Follow</button>
+                        </div>
+                        <div class="side-suggestion">
+                            <a href="#" class="side-suggestion-avatar">
+                                <img src="./assets/images/avatar.png" alt="avatar">
+                            </a>
+                            <div class="side-suggestion-info">
+                                <a href="#">user12</a>
+                                <span>Followed by user1, user2 and 3 others</span>
+                            </div>
+                            <button class="side-suggestion-btn">Follow</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="side-menu-footer">
+                    <div class="side-footer-links">
+                        <ul class="side-footer-list">
+                            <li class="side-footer-item">
+                                <a href="#" class="side-footer-link">About</a>
+                            </li>
+                            <li class="side-footer-item">
+                                <a href="#" class="side-footer-link">Help</a>
+                            </li>
+                            <li class="side-footer-item">
+                                <a href="#" class="side-footer-link">Press</a>
+                            </li>
+                            <li class="side-footer-item">
+                                <a href="#" class="side-footer-link">API</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <span class="side-footer-copyright">&copy: 2023 instagram from facebook</span>
+                </div>
+            </div>
+            <!-- // side menu -->
+        </section>
+    </main>
+</body>
+</html>

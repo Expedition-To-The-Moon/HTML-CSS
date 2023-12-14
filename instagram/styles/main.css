@@ -1,0 +1,267 @@
+.main-con {
+    background-color: var(--primary);
+    margin-top: 44px;
+    margin-bottom: 44px;
+    display: flex;
+}
+.con-con {
+    width: 100%;
+    max-width: 935px;
+    padding: 0 0 8px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* con */
+.con {
+    width: 100%;
+    max-width: 614px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.stories {
+    width: 100%;
+    background-color: var(--primary);
+    padding: 16px 0;
+    position: relative;
+    overflow: hidden;
+}
+.stories::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--border);
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* story 부분 */
+.story {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+.story-avatar {
+    position: relative;
+}
+.story-border {
+    width: 64px;
+    height: 64px;
+    fill: none;
+    stroke: var(--border);
+    stroke-width: 1.5;
+}
+.story-pic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.story-user {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-light);
+    text-transform: lowercase;
+    max-width: 72px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.stories-con {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 16px;
+    padding: 0 16px;
+    position: relative;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.stories-con::-webkit-scrollbar {
+    display: none;
+}
+
+/* post부분 */
+.post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+/* post-header */
+.post-header {
+    background-color: var(--primary);
+    border-bottom: 1px solid var(--border);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+.post-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.post-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.post-user {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-dark);
+    text-decoration: none;
+    text-transform: lowercase;
+}
+.post-user:hover {
+    text-decoration: underline;
+}
+.post-more-options {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* post-con */
+.post-con {
+    display: flex;
+    position: relative;
+}
+.post-medias {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.post-medias::-webkit-scrollbar {
+    display: none;
+}
+.post-media {
+    width: 100%;
+    flex: none;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+/* post-footer */
+.post-footer {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0 4px;
+}
+.post-btns {
+    display: flex;
+    position: relative;    
+}
+.post-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    padding: 8px;
+}
+.post-btn-align-right {
+    margin-left: auto;
+}
+
+.post-infos {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+    gap: 10px;
+}
+.post-likes {
+    align-items: center;
+    gap: 6px;
+}
+.post-likes-avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.post-likes,
+.post-description {
+    display: flex;
+}
+.post-likes span,
+.post-description span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+.post-likes a,
+.post-description a {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-dark);
+    text-decoration: none;
+}
+.post-name-underline:hover {
+    text-decoration: underline;
+}
+.post-date-time {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--text-light);
+    text-transform: uppercase;
+}
+
+/* media <- 뒷부분에 넣는게 좋음 */
+@media (min-width: 620px) {
+    .con-con {
+        padding: 30px 0 24px;
+    }
+    .con {
+        gap: 24px;
+    }
+    .stories, .post {
+        border: 1px solid var(--border);
+        border-radius: 4px;
+    }
+    .stories::after {
+        content: none;
+    }
+    .posts {
+        gap: 24px;
+    }
+    .post-footer {
+        padding: 4px 8px 12px;
+    }
+    .post-date-time {
+        margin-top: 6px;
+    }
+}
+@media (min-width: 1024px) {
+    .main-con {
+        background-color: var(--secondary);
+    }
+    .con {
+        margin: unset;
+    }
+}
