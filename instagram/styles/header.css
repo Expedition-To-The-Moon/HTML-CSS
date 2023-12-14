@@ -60,6 +60,26 @@
     align-items: center;
     gap: 16px;
 }
+/* dark mode */
+.head-theme-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.head-theme-btn-sun {
+    display: none;
+}
+.head-theme-btn-moon {
+    display: unset;
+}
+
+:root.darkTheme .head-theme-btn-sun {
+    display: unset;
+}
+:root.darkTheme .head-theme-btn-moon {
+    display: none;
+}
+
 
 /* profile btn */
 .profile {
