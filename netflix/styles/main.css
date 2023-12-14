@@ -14,11 +14,12 @@ span {
     padding: 10px;
 }
 .con {
-    display: grid;
-    padding: 10px 0;
-    column-gap: 5px;
+    display: flex;
+    column-gap: 15px;
     row-gap: 20px;
-    padding: 10px;
+    padding: 15px;
+    flex-flow: row wrap;
+    align-items: flex-start;
 }
 .con a {
     cursor: pointer;
@@ -30,21 +31,4 @@ span {
 }
 .con img:hover {
     transform: scale(1.6);
-}
-
-/* media */
-@media (max-width: 512px) {
-    .con {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-}
-@media (min-width: 513px) and (max-width: 768px) {
-    .con {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-}
-@media (min-width: 769px) {
-    .con {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
 }
