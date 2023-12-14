@@ -1,0 +1,10 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1024px;
+    font-family: 'Arain';
+}
+
+img {
+    max-width: 100%;
+}
