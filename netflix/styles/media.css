@@ -1,0 +1,17 @@
+/* media */
+@media(max-width: 600px) {
+    header {
+        height: 400px;
+    }
+    .intro-info {
+        top: 50px;
+    }
+}
+@media(min-width: 601px) {
+    header {
+        height: 450px;
+    }
+    .intro-info {
+        top: 100px;
+    }
+}

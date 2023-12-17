@@ -1,9 +1,7 @@
 /* main */
 main {
     position: absolute;
-    top: 350px;
     width: 100%;
-    min-height: 512px;
     background-color: #000;
     box-shadow: 0 -100px 100px 0 #000000 ;
 }
@@ -19,7 +17,6 @@ span {
     row-gap: 20px;
     padding: 15px;
     flex-flow: row wrap;
-    align-items: flex-start;
 }
 .con a {
     cursor: pointer;
@@ -30,5 +27,5 @@ span {
     transition: all 0.25s linear;
 }
 .con img:hover {
-    transform: scale(1.6);
+    transform: scale(1.2);
 }
